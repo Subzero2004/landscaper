@@ -1,17 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
-import BGHeader from '@/asset/bg-header.jpg'
+import BGHeader from '@/asset/Header/bg-header.jpg'
+import Logo from '@/asset/Header/logoDefinitivo.png'
 
 type Props = {}
 
 const Header = (props: Props) => {
     return (
         <header className='h-screen w-full flex flex-col justify-center items-center font-poppins'>
-            <Image src={BGHeader} alt='' quality={100} className='h-screen w-full bg-cover bg-center absolute'/>
+            <Image src={BGHeader} alt='BGHerobanner' quality={100} className='h-screen w-full bg-cover bg-center absolute'/>
             <nav className='h-[7.5rem] w-full px-28 flex z-[900] flex-nowrap flex-row justify-center items-center bg-[rgb(72,70,70,0.378)]'>
                 <div className='h-full w-[1440px] flex flex-row flex-nowrap justify-between items-center'>
-                    <div className='h-[7.5rem] w-[13.5rem] my-auto bg-slate-100'>
-                        <div className='w-full h-full my-auto'></div>
+                    <div className='h-[7.5rem] w-[13.5rem] my-auto flex flex-col justify-center items-center'>
+                        <Image src={Logo} alt='LogoNav' quality={100} className='h-[4.5rem] bg-center flex justify-center items-center bg-contain w-full mx-auto bg-transparent'/>
                     </div>
                     <ul className='h-full w-[32rem] flex flex-row flex-wrap justify-between items-center content-center text-white'>
                         <li className='z-[580] h-full w-[15%] flex flex-col justify-center items-center'>
