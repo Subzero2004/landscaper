@@ -1,5 +1,6 @@
 import React from "react"
-
+import Image from "next/image"
+import About1 from '@/asset/AboutUs/About1.jpg'
 type Props = {}
 
 const Aboutus = (props: Props) => {
@@ -37,8 +38,8 @@ const Aboutus = (props: Props) => {
             </div>
             <div className="w-[45%] h-[33rem] flex flex-col items-end justify-start">
                 <div className="aspect-square relative h-[83%]">
-                    <div className="bg-gray-800 w-[372.48px] h-[372.48px] z-[12] left-0 bottom-0 absolute bg-center"></div>
-                    <div className="border-solid border-2 border-gray-400 w-[372.48px] h-[372.48px] right-0 top-0 z-[11] absolute"></div>
+                    <Image src={About1} alt="" className="w-[372.48px] h-[372.48px] z-[12] left-0 bottom-0 absolute bg-center"/>
+                    <div className="border-solid border-[3px] border-[rgb(63,93,125,0.75)] rounded-[5px] w-[372.48px] h-[372.48px] right-0 top-0 z-[11] absolute"></div>
                 </div>
             </div>
         </div>

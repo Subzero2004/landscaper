@@ -22,7 +22,7 @@ const Service = (props: Props) => {
             </div>
             <div className="grid grid-cols-3 grid-rows-3 gap-y-8 h-[97%] w-full rounded-[10px] my-8">
                 <div className=" flex flex-col justify-start w-[23rem] h-96 m-auto rounded-[5px] bg-slate-300">
-                    {/* <Image src={Fumigacion} alt="Image1" className="bg-center bg-cover"/> */}
+                    <Image src={Fumigacion} alt="Image1" className="bg-center bg-cover"/>
                     <div className="h-[28%] w-full py-[0.3rem] px-[0.5rem] mt-[40%] relative mx-auto flex flex-col justify-evenly items-center text-center bg-[rgb(20,53,107,0.62)]">
                         <h4 className="relative w-full text-[35px] font-poppins font-normal tracking-[1px] text-[rgb(240,240,240)]">Fumigación</h4>
                         <div className="relative w-full text-xl tracking-[1px] font-poppins text-[rgb(240,240,240)]">Áreas Verdes</div>
