@@ -1,4 +1,9 @@
 import React from "react"
+import Image from "next/image"
+import Whatsapp from '@/asset/BasicLogo/whatsapp.png'
+import Facebook from '@/asset/BasicLogo/Facebook.png'
+import Instagram from '@/asset/BasicLogo/Instagram.png'
+import Email from '@/asset/BasicLogo/Email.png'
 
 type Props = {}
 
@@ -7,24 +12,24 @@ const Contact = (props: Props) => {
     <section className="max-w-[1200px] mt-8 mx-auto text-center">
         <div className="w-full h-28 mt-4 mb-12 flex flex-col justify-center">
             <a className="h-16 w-[99%] mx-auto flex flex-row justify-center items-center rounded-[7px] bg-green-600 uppercase text-lg font-poppins font-bold tracking-[0.118rem] text-white">
-                <div className="w-[1.6rem] h-[1.6rem] mx-[0.6rem] bg-gray-500" />
+                <Image src={Whatsapp} alt="" quality={100} className="w-[1.6rem] h-[1.6rem] mx-[0.6rem]" />
                 Consultanos por Whatsapp
             </a>
         </div>
-        <div className="w-full mx-auto flex flex-row-reverse justify-between bg-gray-700 border-t-white border-b-gray-700">
+        <div className="w-full h-full mx-auto flex flex-row-reverse justify-between bg-[rgb(53,53,53)] border-t-white border-b-gray-700">
             <footer className="h-[90%] w-2/5 pt-8 items-center flex flex-col justify-evenly bg-white">
                 <div className="min-w-32 min-h-32 mx-auto mb-2 flex flex-col justify-start items-center">
-                    <div className="w-10 h-10 mb-4 bg-slate-400" />
+                    <Image src={Whatsapp} alt="" quality={100} className="w-10 h-10 mb-4" />
                     <p className="tracking-[0.8px] font-poppins font-bold text-base text-gray-500">XX-XXXX-XXXX</p>
                 </div>
                 <div className="min-w-32 min-h-32 mx-auto mb-2 flex flex-col justify-start items-center">
-                    <div className="w-10 h-10 mb-4 bg-slate-400" />
+                    <Image src={Email} alt="" quality={100} className="w-10 h-10 mb-4 " />
                     <p className="tracking-[0.8px] font-poppins font-bold text-base text-gray-500">contacto@botanico.com.ar</p>
                 </div>
                 <div className="min-w-32 min-h-32 mx-auto mb-2 flex flex-col justify-start items-center">
-                    <div className="flex flex-nowrap">
-                        <div className="w-16 h-16 mb-4 bg-slate-400" />
-                        <div className="w-16 h-16 mb-4 bg-slate-400" />
+                    <div className="flex flex-nowrap justify-between">
+                        <Image src={Facebook} alt="" quality={100} className="w-12 h-12 mb-4" />
+                        <Image src={Instagram} alt="" className="w-12 h-12 mb-4" />
                     </div>
                     <p className="tracking-[0.8px] font-poppins font-bold text-base text-gray-500">Seguinos</p>
                 </div>
