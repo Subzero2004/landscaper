@@ -8,8 +8,12 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'dekstop': {'max': '1484px'},
+      'tablet': {'max': '860px',},
+      'mobile': {'max': '320px'},
+    },
     extend: {
-
       fontFamily: {
         poppins: ['var(--font-poppins)'],
         roboto: ['var(--font-roboto)'],
