@@ -10,8 +10,14 @@ const config: Config = {
   theme: {
     screens: {
       'dekstop': {'max': '1484px'},
+      'laptop': {'max': '1250px'},
+      'laptopL': {'max': '1145px'},
+      'laptopS': {'max': '987px'},
       'tablet': {'max': '860px',},
-      'mobile': {'max': '320px'},
+      'tabletS': {'max': '687px',},
+      'tabletXS': {'max': '588px',},
+      'mobileL': {'max': '425px'},
+      'mobileS': {'max': '385px'},
     },
     extend: {
       fontFamily: {
